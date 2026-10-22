@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0F100F;
+  --bg-surface: #171816;
+  --text-primary: #F4EFEA;
+  --text-muted: #9E9A92;
+  --accent-purple: #9A87AC;
+  --accent-green: #5B705F;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0F100F;
+  color: #F4EFEA;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F100F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232522;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #343732;
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(154, 135, 172, 0.35);
+  color: #FAF8F5;
+}
+
+/* Editorial Typography utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px rgba(244, 239, 234, 0.15);
+  }
+
+  .editorial-title {
+    font-size: clamp(2.25rem, 5.5vw, 4.75rem);
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+  }
+
+  .editorial-subtitle {
+    font-size: clamp(1.5rem, 3.2vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid rgba(154, 135, 172, 0.7);
+  outline-offset: 3px;
+}
+
+/* Prevent unwanted drag and highlight */
+img {
+  user-select: none;
+}

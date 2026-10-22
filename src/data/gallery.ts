@@ -1,0 +1,58 @@
+import { GalleryItem } from "@/types";
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "gal-1",
+    title: "Slow Morning Ritual",
+    category: "coffee",
+    caption: "Pouring the morning brew under warm ambient lighting",
+    aspectRatio: "aspect-[4/5]",
+    gridSpan: "col-span-1 md:col-span-2 row-span-2",
+    placeholderLabel: "HERO GALLERY: COFFEE RITUAL (WIDE/LARGE)",
+  },
+  {
+    id: "gal-2",
+    title: "The Workshop & The Steed",
+    category: "cycling",
+    caption: "Jamal's racing bicycle resting in its corner sanctuary",
+    aspectRatio: "aspect-square",
+    gridSpan: "col-span-1 md:col-span-1 row-span-1",
+    placeholderLabel: "CYCLING CORNER / BICYCLE DISPLAY",
+  },
+  {
+    id: "gal-3",
+    title: "Conversations at the Bar",
+    category: "community",
+    caption: "Where local stories and creative ideas unfold",
+    aspectRatio: "aspect-[4/3]",
+    gridSpan: "col-span-1 md:col-span-1 row-span-1",
+    placeholderLabel: "BAR & COMMUNITY SEATING",
+  },
+  {
+    id: "gal-4",
+    title: "Raw Textures & Warm Tones",
+    category: "interior",
+    caption: "Minimalist concrete balanced with natural timber",
+    aspectRatio: "aspect-[16/9]",
+    gridSpan: "col-span-1 md:col-span-2 row-span-1",
+    placeholderLabel: "INTERIOR ARCHITECTURE / AMBIENCE",
+  },
+  {
+    id: "gal-5",
+    title: "Post-Ride Gathering",
+    category: "cycling",
+    caption: "Cyclists refueling after a climb through Sumedang hills",
+    aspectRatio: "aspect-square",
+    gridSpan: "col-span-1 md:col-span-1 row-span-1",
+    placeholderLabel: "CYCLING COMMUNITY GATHERING",
+  },
+  {
+    id: "gal-6",
+    title: "Bottled Craft",
+    category: "detail",
+    caption: "Freshly sealed 1-liter sharing packages ready for takeaway",
+    aspectRatio: "aspect-[3/4]",
+    gridSpan: "col-span-1 md:col-span-1 row-span-1",
+    placeholderLabel: "BOTTLED PACKAGE PACKAGING DETAIL",
+  },
+];
